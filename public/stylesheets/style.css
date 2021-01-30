@@ -1,0 +1,22 @@
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  }
+  a {
+    color: #00B7FF;
+  }
+
+  .myMargin {
+    padding-bottom: 2%;
+  }
+
+  .myMargin2 {
+    margin-top: 3%;
+    padding-bottom: 1%;
+  }
+
+  #footer {
+    position: absolute;
+    bottom: 5px;
+    left: 3%;
+  }

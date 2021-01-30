@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  <h3>Pages</h3>
+  <hr>
+  <ul class="list-unstyled">
+    <!-- PLACEHOLDER LIST OF PAGES -->
+    {% for page in pages %}
+    <li class="myMargin">
+      <a href="{{page.route}}">{{page.title}}</a>
+    </li>
+    {% endfor %}
+
+    <hr>
+    <form method="GET" action="/wiki/searchByTag">
+    
+      <div class="form-group myMargin">
+        <label for="tags" class="col-sm-2 control-label">Search by tags: </label>
+        <div class="col-sm-10">
+          <input name="tags" type="text" class="form-control"/>
+        </div>
+      </div>
+    
+      <div class="col-sm-offset-2 col-sm-10 myMargin2">
+        <button type="submit" class="btn btn-primary">SEARCH!</button>
+      </div>
+      
+    </form>
+
+  </ul>
+{% endblock %}

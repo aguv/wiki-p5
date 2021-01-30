@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  <h3>{{page.title}} <small> (<a href="{{page.route}}/similar">Similar</a>)</small></h3>
+  <h4>by <a href="/users/{{page.author.id}}">{{page.author.author}}</a></h4>
+  <div>{{page.tags}}</div>
+  <hr/>
+  <div><a href="/users/{{page.author.id}}">{{page.author.author}}</a></div>
+  <div class="page-body">{{page.content}}</div>
+  <hr/>
+  <a href="{{page.route}}/edit" class="btn btn-primary">E D I T</a>
+  <a href="{{page.route}}/delete" class="btn btn-danger">D E L E T E</a>
+{% endblock %}

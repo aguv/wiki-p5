@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h1>Author: {{ user.author }}</h3>
+<h3>Email: {{ user.email }}</h1>
+<hr>
+{% for page in pages %}
+      <li class="myMargin"><a href="{{ page.route }}">{{ page.title }}</a></li>
+{% endfor %}
+
+{% endblock %}
